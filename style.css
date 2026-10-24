@@ -1,3 +1,6 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & RESET
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +24,9 @@ body {
     background-attachment: fixed;
 }
 
-/* Header Section */
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
 header {
     display: flex;
     justify-content: space-between;
@@ -82,7 +87,9 @@ nav a:hover, nav a.active {
     color: #ff0f1b;
 }
 
-/* Hero Section Layout */
+/* ==========================================================================
+   3. HERO SECTION
+   ========================================================================== */
 .hero {
     min-height: 82vh;
     padding: 10px 3% 0px 4%;
@@ -153,7 +160,7 @@ nav a:hover, nav a.active {
     margin-bottom: 18px;
 }
 
-/* Hero Buttons Styling */
+/* Hero Buttons */
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -276,7 +283,9 @@ nav a:hover, nav a.active {
     line-height: 1.3;
 }
 
-/* General Sections */
+/* ==========================================================================
+   4. GENERAL SECTIONS & PROJECTS
+   ========================================================================== */
 .section {
     padding: 60px 5%;
     border-bottom: 1px solid #1a1a1a;
@@ -306,7 +315,7 @@ nav a:hover, nav a.active {
     color: #ff0f1b;
 }
 
-/* Projects Grid Styling */
+/* Projects Grid */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
@@ -384,7 +393,9 @@ nav a:hover, nav a.active {
     text-decoration: underline;
 }
 
-/* Certifications Section Grid */
+/* ==========================================================================
+   5. CERTIFICATIONS SECTION
+   ========================================================================== */
 .certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -405,7 +416,9 @@ nav a:hover, nav a.active {
     font-weight: 600;
 }
 
-/* 2 Column Grid for Education & Skills */
+/* ==========================================================================
+   6. EDUCATION & SKILLS (2 COLUMNS)
+   ========================================================================== */
 .grid-2-col {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -429,7 +442,7 @@ nav a:hover, nav a.active {
     margin-bottom: 25px;
 }
 
-/* Education Vertical Timeline Styling */
+/* Education Timeline */
 .education-timeline {
     position: relative;
     padding-left: 20px;
@@ -559,7 +572,9 @@ nav a:hover, nav a.active {
     transform: translateY(-2px);
 }
 
-/* Contact Section */
+/* ==========================================================================
+   7. CONTACT SECTION
+   ========================================================================== */
 .contact-section {
     background: transparent;
 }
@@ -680,7 +695,9 @@ nav a:hover, nav a.active {
     display: inline-block;
 }
 
-/* Footer */
+/* ==========================================================================
+   8. FOOTER
+   ========================================================================== */
 footer {
     padding: 20px 5%;
     display: flex;
@@ -691,28 +708,33 @@ footer {
     background: rgba(5, 5, 5, 0.9);
 }
 
-/* Responsive Styles */
+/* ==========================================================================
+   9. TABLET RESPONSIVE FIX (MAX-WIDTH: 900PX)
+   ========================================================================== */
 @media (max-width: 900px) {
     .grid-2-col, .hero {
         grid-template-columns: 1fr;
-        flex-direction: column;
     }
+    
     .hero-right {
         border-left: none;
         padding-left: 0;
         border-top: 1px solid #1a1a1a;
         padding-top: 20px;
     }
+    
     .hero-center {
         margin-right: 0;
         justify-content: center;
     }
+    
     .contact-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
         padding: 25px;
     }
+    
     .contact-center {
         border-left: none;
         border-top: 1px solid #222222;
@@ -720,23 +742,23 @@ footer {
         padding-top: 25px;
         width: 100%;
     }
+    
     .contact-right {
         justify-content: flex-start;
         width: 100%;
     }
+    
     .build-motto-banner {
         text-align: left;
     }
 }
 
-/* =====================================
-   MOBILE RESPONSIVE FIX
-   Existing desktop styles are preserved
-===================================== */
-
+/* ==========================================================================
+   10. MOBILE RESPONSIVE FIX (MAX-WIDTH: 600PX)
+   ========================================================================== */
 @media screen and (max-width: 600px) {
 
-    /* Prevent horizontal overflow */
+    /* Prevent horizontal scrolling & side movement */
     html,
     body {
         width: 100%;
@@ -744,7 +766,7 @@ footer {
         overflow-x: clip;
     }
 
-    /* Header and navigation */
+    /* Header adjustments */
     header {
         position: sticky;
         top: 0;
@@ -779,7 +801,7 @@ footer {
         letter-spacing: 1px;
     }
 
-    /* Home / hero section */
+    /* Hero section adjustments */
     .hero {
         width: 100%;
         min-height: auto;
@@ -830,7 +852,7 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    /* Buttons */
+    /* Buttons responsive fix */
     .hero-buttons {
         width: 100%;
         display: flex;
@@ -852,7 +874,7 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    /* Profile photo */
+    /* Profile photo adjustments */
     .hero-center {
         width: 100%;
         height: auto;
@@ -875,7 +897,7 @@ footer {
         margin: 0 auto;
     }
 
-    /* Project, certificate and education sections */
+    /* Section padding & layouts */
     .section {
         width: 100%;
         padding: 42px 18px;
@@ -940,7 +962,7 @@ footer {
         gap: 14px;
     }
 
-    /* Education and skills */
+    /* Education and Skills stacked layout */
     .grid-2-col {
         width: 100%;
         grid-template-columns: minmax(0, 1fr);
@@ -989,7 +1011,7 @@ footer {
         overflow-wrap: anywhere;
     }
 
-    /* Contact */
+    /* Contact Section stacked layout */
     .contact-container {
         width: 100%;
         min-width: 0;
@@ -1048,7 +1070,7 @@ footer {
         font-size: 34px;
     }
 
-    /* Footer */
+    /* Footer responsive fix */
     footer {
         width: 100%;
         flex-direction: column;
