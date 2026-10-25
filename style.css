@@ -88,37 +88,34 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Exact Reference 3-Column Layout Fix for Desktop)
+   3. HERO SECTION (Reference Image 3-Column Layout Fix)
    ========================================================================== */
 .hero {
     min-height: 85vh;
     padding: 20px 4% 0 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.75fr; /* 1. Left Text, 2. Center Image, 3. Right Stats */
+    align-items: center;
     position: relative;
     border-bottom: 1px solid #1a1a1a;
     background: transparent;
     overflow: hidden;
-}
-
-/* HTML-ல் உள்ள hero-top-wrapper மற்றும் hero-right இரண்டும் சேர்ந்து 3 Columns-ஆக மாறுகிறது */
-.hero-top-wrapper {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr; /* 1. Left Text, 2. Center Image */
-    align-items: center;
-    width: 100%;
     gap: 20px;
 }
 
+.hero-top-wrapper {
+    display: contents; /* HTML structure-ai maatraamal grid-kulle konduvarum */
+}
+
 .hero-left {
+    grid-column: 1;
     z-index: 2;
     padding-bottom: 20px;
 }
 
 .main-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: clamp(45px, 7vw, 110px);
+    font-size: clamp(45px, 6.5vw, 105px);
     line-height: 0.80;
     letter-spacing: -1px;
     margin-bottom: 20px;
@@ -226,6 +223,7 @@ nav a:hover, nav a.active {
 }
 
 .hero-center {
+    grid-column: 2;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -235,7 +233,7 @@ nav a:hover, nav a.active {
 
 .hero-person-img {
     width: 100%;
-    max-width: 440px;
+    max-width: 420px; /* Reference image-la irukkura size-ku katchithamaaga fit aagum */
     height: auto;
     object-fit: cover;
     object-position: top center;
@@ -244,39 +242,15 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.95);
 }
 
-/* 3வது Column-ஆக வலது பக்கத்தில் Stats வர வைக்கும் மேஜிக் Code */
-.hero {
-    display: grid;
-    grid-template-columns: 1.2fr 1.1fr 0.8fr; /* Text, Image, Stats */
-    grid-template-areas: 
-        "top top right"
-        "top top right";
-    align-items: center;
-}
-
-.hero-top-wrapper {
-    grid-column: span 2;
-    display: contents; /* HTML-ஐ மாற்றாமல் இருக்க உதவிகரமாக இருக்கும் */
-}
-
-.hero-left {
-    grid-column: 1;
-}
-
-.hero-center {
-    grid-column: 2;
-}
-
+/* Right Stats section - 3rd Column-ah right side-il varum */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    border-top: none;
     border-left: 1px solid #1c1c1c;
     padding-left: 25px;
-    padding-top: 0;
     margin-top: 0;
 }
 
@@ -771,7 +745,7 @@ footer {
         letter-spacing: 0.4px;
     }
 
-    /* Mobile-ல் Hero பகுதியை மீண்டும் Normal Flow-க்கு மாற்றுகிறோம் */
+    /* Mobile view-kku hero section-ai normal column-ah maathugirathu */
     .hero {
         display: flex;
         flex-direction: column;
@@ -847,8 +821,9 @@ footer {
         height: auto;
     }
 
-    /* Mobile-ல் Stats கீழேயும் சரியாக வர */
+    /* Mobile-l stats keezhe varum */
     .hero-right {
+        grid-column: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
