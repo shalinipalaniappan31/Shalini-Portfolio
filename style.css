@@ -88,7 +88,7 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Perfect 3-Column Layout & Large Image)
+   3. HERO SECTION (Increased Font Sizes for All Elements)
    ========================================================================== */
 .hero {
     min-height: 90vh;
@@ -115,10 +115,10 @@ nav a:hover, nav a.active {
 
 .main-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: clamp(48px, 6vw, 110px);
+    font-size: clamp(55px, 7vw, 125px); /* Title size perusakkappattullathu */
     line-height: 0.80;
     letter-spacing: -1px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 0;
     font-weight: 900;
     background: linear-gradient(180deg, #ff0f1b 0%, #d6050e 60%, #990005 100%);
@@ -139,17 +139,17 @@ nav a:hover, nav a.active {
     display: flex;
     gap: 12px;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .red-dash {
     color: #ff0f1b;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .role-titles p {
-    font-size: 11px;
+    font-size: 13px; /* Role titles size perusakkappattullathu */
     letter-spacing: 2px;
     font-weight: 700;
     color: #cccccc;
@@ -157,18 +157,18 @@ nav a:hover, nav a.active {
 }
 
 .hero-bio {
-    font-size: 11.5px;
+    font-size: 13.5px; /* Bio size perusakkappattullathu */
     color: #888888;
-    max-width: 360px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    max-width: 380px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 /* Hero Buttons */
 .hero-buttons {
     display: flex;
-    gap: 12px;
-    margin-bottom: 15px;
+    gap: 15px;
+    margin-bottom: 22px;
     flex-wrap: wrap;
 }
 
@@ -179,9 +179,9 @@ nav a:hover, nav a.active {
     background-color: #ff0f1b;
     border: 1px solid #ff0f1b;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    font-size: 10.5px;
+    font-size: 12px; /* Button text size perusakkappattullathu */
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -199,9 +199,9 @@ nav a:hover, nav a.active {
     background: rgba(10, 10, 10, 0.85);
     border: 1px solid #ff0f1b;
     color: #ff0f1b;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
-    font-size: 10.5px;
+    font-size: 12px; /* Button text size perusakkappattullathu */
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
@@ -216,7 +216,7 @@ nav a:hover, nav a.active {
 
 .bottom-tagline {
     font-family: 'Bebas Neue', cursive;
-    font-size: 16px;
+    font-size: 20px; /* "Code. Create. Evolve." tagline size perusakkappattullathu */
     letter-spacing: 2.5px;
     color: #ff0f1b;
     opacity: 0.9;
@@ -233,7 +233,7 @@ nav a:hover, nav a.active {
 
 .hero-person-img {
     width: 100%;
-    max-width: 680px; /* படத்தினை மேலும் பெரிதாக்கி முழு இடத்தை ஆக்கிரமிக்கச் செய்யப்பட்டுள்ளது */
+    max-width: 680px; 
     height: auto;
     object-fit: cover;
     object-position: top center;
@@ -242,42 +242,42 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.95);
 }
 
-/* Right Stats section */
+/* Right Stats section - Font sizes increased */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     border-left: 1px solid #1c1c1c;
-    padding-left: 25px;
+    padding-left: 28px;
     margin-top: 0;
 }
 
 .stat-block {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
 }
 
 .stat-num {
     font-family: 'Bebas Neue', cursive;
-    font-size: 44px;
+    font-size: 54px; /* Stats numbers size perusakkappattullathu */
     color: #ff0f1b;
     line-height: 0.9;
     letter-spacing: 0.5px;
 }
 
 .stat-info h4 {
-    font-size: 11px;
+    font-size: 13px; /* Projects, Certificates headings size perusakkappattullathu */
     letter-spacing: 1.8px;
     color: #ffffff;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     font-weight: 700;
 }
 
 .stat-info p {
-    font-size: 11px;
+    font-size: 12.5px; /* Stats description text size perusakkappattullathu */
     color: #777777;
     line-height: 1.3;
 }
