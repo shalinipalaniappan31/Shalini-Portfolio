@@ -88,14 +88,14 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Perfect Balance: Massive Photo + Large Right Stats)
+   3. HERO SECTION (Massive Photo with Top Gap Removed & Large Right Stats)
    ========================================================================== */
 .hero {
-    min-height: 90vh;
-    padding: 10px 2% 0 2%;
+    min-height: 92vh;
+    padding: 0 2% 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 0.85fr; /* Grid balanced to keep image extra large */
-    align-items: center;
+    grid-template-columns: 1fr 1.6fr 0.85fr; 
+    align-items: stretch; /* Image stretches to fill full height seamlessly */
     position: relative;
     border-bottom: 1px solid #1a1a1a;
     background: transparent;
@@ -110,6 +110,9 @@ nav a:hover, nav a.active {
 .hero-left {
     grid-column: 1;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-bottom: 10px;
 }
 
@@ -225,32 +228,33 @@ nav a:hover, nav a.active {
     grid-column: 2;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end; /* Head mela irukkura gap-ai remove panna bottom-la align seyyappattullathu */
     z-index: 2;
     height: 100%;
 }
 
 .hero-person-img {
     width: 100%;
-    max-width: 780px; /* Photo size romba perusaa, screen-oda full height-ai occupy panra mathiri set pannirukken */
-    height: auto;
+    max-width: 860px; /* Photo-voda size inum romba perusah aakkappattullathu */
+    height: 100%;
+    max-height: 92vh;
     object-fit: cover;
     object-position: top center;
     display: block;
     mix-blend-mode: lighten;
-    filter: contrast(1.15) brightness(0.95);
+    filter: contrast(1.15) brightness(0.98);
 }
 
-/* Right Stats section - Large Fonts & Perfect Fit */
+/* Right Stats section - Perfectly Aligned */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    justify-content: center;
+    gap: 24px;
     border-left: 1px solid #1c1c1c;
     padding-left: 24px;
-    margin-top: 0;
 }
 
 .stat-block {
@@ -261,14 +265,14 @@ nav a:hover, nav a.active {
 
 .stat-num {
     font-family: 'Bebas Neue', cursive;
-    font-size: 68px; /* Stats numbers romba perusah irukkum */
+    font-size: 68px; 
     color: #ff0f1b;
     line-height: 0.85;
     letter-spacing: 0.5px;
 }
 
 .stat-info h4 {
-    font-size: 14.5px; /* Headers clear-ah perusah irukkum */
+    font-size: 14.5px; 
     letter-spacing: 1.8px;
     color: #ffffff;
     margin-bottom: 2px;
@@ -276,7 +280,7 @@ nav a:hover, nav a.active {
 }
 
 .stat-info p {
-    font-size: 13.5px; /* Subtext thelivah irukkum */
+    font-size: 13.5px; 
     color: #aaaaaa;
     line-height: 1.35;
 }
