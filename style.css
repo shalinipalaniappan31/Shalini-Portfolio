@@ -88,14 +88,14 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Massive Original Fonts + Safe Top Padding to Prevent Cut)
+   3. HERO SECTION (Massive Photo with Top Gap Removed & Large Right Stats)
    ========================================================================== */
 .hero {
-    min-height: 90vh;
-    padding: 35px 2% 0 2%; /* Top padding mela idikamal irukka katchithamaha set seyyappattullathu */
+    min-height: 92vh;
+    padding: 0 2% 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1.5fr 0.85fr; 
-    align-items: stretch;
+    grid-template-columns: 1fr 1.6fr 0.85fr; 
+    align-items: stretch; /* Image stretches to fill full height seamlessly */
     position: relative;
     border-bottom: 1px solid #1a1a1a;
     background: transparent;
@@ -118,7 +118,7 @@ nav a:hover, nav a.active {
 
 .main-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: clamp(65px, 8.5vw, 140px); /* Palaiya romba perusana font size thirumbi tharappattullathu */
+    font-size: clamp(65px, 8.5vw, 140px);
     line-height: 0.80;
     letter-spacing: -1px;
     margin-bottom: 25px;
@@ -228,30 +228,31 @@ nav a:hover, nav a.active {
     grid-column: 2;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-end; /* Head mela irukkura gap-ai remove panna bottom-la align seyyappattullathu */
     z-index: 2;
     height: 100%;
 }
 
 .hero-person-img {
     width: 100%;
-    max-width: 780px; 
-    height: auto;
+    max-width: 860px; /* Photo-voda size inum romba perusah aakkappattullathu */
+    height: 100%;
+    max-height: 92vh;
     object-fit: cover;
     object-position: top center;
     display: block;
     mix-blend-mode: lighten;
-    filter: contrast(1.15) brightness(0.95);
+    filter: contrast(1.15) brightness(0.98);
 }
 
-/* Right Stats section */
+/* Right Stats section - Perfectly Aligned */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 22px;
+    gap: 24px;
     border-left: 1px solid #1c1c1c;
     padding-left: 24px;
 }
