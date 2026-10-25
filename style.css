@@ -761,7 +761,7 @@ footer {
 
     nav {
         display: flex;
-        gap: 8px;
+        gap: 6px;
         overflow-x: auto;
         max-width: 65%;
         white-space: nowrap;
@@ -773,33 +773,48 @@ footer {
     }
 
     nav a {
-        font-size: 8.5px;
-        letter-spacing: 0.5px;
+        font-size: 8px;
+        letter-spacing: 0.4px;
     }
 
-    /* Hero Section: Perfect side-by-side title and image layout match */
+    /* Hero Section: Exact Reference Match Layout */
     .hero {
         padding: 20px 14px;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero-top-wrapper {
-        grid-template-columns: 1fr 115px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
         gap: 8px;
     }
 
+    .hero-left {
+        width: 60%;
+        padding-bottom: 5px;
+    }
+
     .main-title {
-        font-size: 34px;
-        line-height: 0.88;
+        font-size: 30px;
+        line-height: 0.85;
+        margin-bottom: 10px;
+    }
+
+    .role-line {
         margin-bottom: 10px;
     }
 
     .role-titles p {
-        font-size: 8px;
-        letter-spacing: 0.5px;
+        font-size: 7.5px;
+        letter-spacing: 0.4px;
     }
 
     .hero-bio {
-        font-size: 11px;
+        font-size: 10.5px;
         line-height: 1.4;
         margin-bottom: 12px;
         max-width: 100%;
@@ -816,40 +831,59 @@ footer {
     .download-resume-btn {
         width: 100%;
         padding: 8px 10px;
-        font-size: 9px;
+        font-size: 8.5px;
         justify-content: center;
         letter-spacing: 0.8px;
     }
 
     .bottom-tagline {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .hero-center {
+        width: 38%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: 0;
     }
 
     .hero-person-img {
-        max-width: 115px;
+        width: 100%;
+        max-width: 125px;
+        height: auto;
     }
 
-    /* Stats blocks at the bottom of hero */
+    /* Stats blocks below hero */
     .hero-right {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4px;
-        padding-top: 15px;
-        margin-top: 15px;
+        border-top: 1px solid #1a1a1a;
+        padding-top: 12px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .stat-block {
         border-right: 1px solid #1a1a1a;
         padding-right: 4px;
+        text-align: center;
+        background: transparent;
+    }
+
+    .stat-block:last-child {
+        border-right: none;
     }
 
     .stat-num {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .stat-info h4 {
-        font-size: 7px;
-        letter-spacing: 0.5px;
+        font-size: 6.5px;
+        letter-spacing: 0.4px;
     }
 
     .stat-info p {
