@@ -88,19 +88,19 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Right Side Stats Fully Increased & Perfectly Fitted)
+   3. HERO SECTION (Perfect Balance: Massive Photo + Large Right Stats)
    ========================================================================== */
 .hero {
     min-height: 90vh;
     padding: 10px 2% 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1.3fr 0.95fr; 
+    grid-template-columns: 1fr 1.5fr 0.85fr; /* Grid balanced to keep image extra large */
     align-items: center;
     position: relative;
     border-bottom: 1px solid #1a1a1a;
     background: transparent;
     overflow: hidden;
-    gap: 20px;
+    gap: 15px;
 }
 
 .hero-top-wrapper {
@@ -232,7 +232,7 @@ nav a:hover, nav a.active {
 
 .hero-person-img {
     width: 100%;
-    max-width: 680px; 
+    max-width: 780px; /* Photo size romba perusaa, screen-oda full height-ai occupy panra mathiri set pannirukken */
     height: auto;
     object-fit: cover;
     object-position: top center;
@@ -241,44 +241,44 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.95);
 }
 
-/* Right Stats section - Highly Increased Fonts & Perfectly Fitted */
+/* Right Stats section - Large Fonts & Perfect Fit */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 24px; /* Space between items katchithamaga set seyyappattullathu */
+    gap: 22px;
     border-left: 1px solid #1c1c1c;
-    padding-left: 28px;
+    padding-left: 24px;
     margin-top: 0;
 }
 
 .stat-block {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
 .stat-num {
     font-family: 'Bebas Neue', cursive;
-    font-size: 72px; /* Stats numbers (01, 08, 03) inum romba perusah aakkappattullathu */
+    font-size: 68px; /* Stats numbers romba perusah irukkum */
     color: #ff0f1b;
     line-height: 0.85;
     letter-spacing: 0.5px;
 }
 
 .stat-info h4 {
-    font-size: 15px; /* PROJECTS, CERTIFICATES headers perusah irukkum */
-    letter-spacing: 2px;
+    font-size: 14.5px; /* Headers clear-ah perusah irukkum */
+    letter-spacing: 1.8px;
     color: #ffffff;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     font-weight: 700;
 }
 
 .stat-info p {
-    font-size: 14px; /* Subtext description romba thelivah perusah irukkum */
+    font-size: 13.5px; /* Subtext thelivah irukkum */
     color: #aaaaaa;
-    line-height: 1.4;
+    line-height: 1.35;
 }
 
 /* ==========================================================================
@@ -869,7 +869,6 @@ footer {
     }
 
     .contact-container {
-        flex-direction: canvas;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
