@@ -712,39 +712,9 @@ footer {
 }
 
 /* ==========================================================================
-   9. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
+   9. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE) - FIXED 900px THRESHOLD
    ========================================================================== */
 @media (max-width: 900px) {
-    .grid-2-col {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-        padding: 25px;
-    }
-    
-    .contact-center {
-        border-left: none;
-        border-top: 1px solid #222222;
-        padding-left: 0;
-        padding-top: 25px;
-        width: 100%;
-    }
-    
-    .contact-right {
-        justify-content: flex-start;
-        width: 100%;
-    }
-    
-    .build-motto-banner {
-        text-align: left;
-    }
-}
-
-@media screen and (max-width: 768px) {
     html,
     body {
         width: 100%;
@@ -777,7 +747,7 @@ footer {
         letter-spacing: 0.4px;
     }
 
-    /* Hero Section: Fixed Mobile Stack Layout */
+    /* Hero Section: Stacked Layout for Mobile & Tablet */
     .hero {
         padding: 25px 16px;
         display: flex;
@@ -786,7 +756,7 @@ footer {
 
     .hero-top-wrapper {
         display: flex;
-        flex-direction: column; /* Stack text above the profile image */
+        flex-direction: column; /* Stack name/text above the profile image */
         width: 100%;
         gap: 20px;
     }
@@ -849,7 +819,7 @@ footer {
 
     .hero-person-img {
         width: 100%;
-        max-width: 260px; /* Perfectly centered profile image size on mobile */
+        max-width: 260px; /* Centered profile image size for mobile */
         height: auto;
     }
 
@@ -906,13 +876,14 @@ footer {
 
     .contact-container {
         flex-direction: column;
-        padding: 20px;
+        align-items: flex-start;
         gap: 20px;
+        padding: 20px;
     }
 
     .contact-center {
         border-left: none;
-        border-top: 1px solid #222;
+        border-top: 1px solid #222222;
         padding-left: 0;
         padding-top: 20px;
         width: 100%;
@@ -921,5 +892,9 @@ footer {
     .contact-right {
         justify-content: flex-start;
         width: 100%;
+    }
+
+    .build-motto-banner {
+        text-align: left;
     }
 }
