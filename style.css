@@ -752,7 +752,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     html,
     body {
         width: 100%;
@@ -761,9 +761,6 @@ footer {
     }
 
     header {
-        position: sticky;
-        top: 0;
-        width: 100%;
         padding: 12px 16px;
         flex-direction: row;
         justify-content: space-between;
@@ -772,7 +769,7 @@ footer {
 
     nav {
         display: flex;
-        gap: 12px;
+        gap: 10px;
         overflow-x: auto;
         max-width: 60%;
         white-space: nowrap;
@@ -785,81 +782,108 @@ footer {
 
     nav a {
         font-size: 9px;
-        letter-spacing: 1px;
+        letter-spacing: 0.8px;
     }
 
+    /* Hero Layout Optimization for Mobile */
     .hero {
         width: 100%;
         min-height: auto;
-        padding: 30px 16px;
+        padding: 25px 16px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: left;
+        align-items: stretch;
     }
 
     .hero-left {
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .main-title {
-        font-size: clamp(45px, 12vw, 65px);
+        font-size: clamp(40px, 11vw, 60px);
         line-height: 0.9;
-        white-space: normal;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .hero-bio {
-        font-size: 13px;
-        line-height: 1.6;
+        font-size: 12px;
+        line-height: 1.5;
         max-width: 100%;
+        margin-bottom: 15px;
     }
 
     .hero-buttons {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 15px;
     }
 
     .view-projects-btn,
     .download-resume-btn {
-        width: 100%;
+        flex: 1;
+        padding: 10px 8px;
+        font-size: 10px;
         justify-content: center;
-        padding: 12px;
+        text-align: center;
+        letter-spacing: 1px;
     }
 
+    .bottom-tagline {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Hero Image Proper Alignment */
     .hero-center {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 20px 0;
+        margin: 10px 0 20px 0;
         left: 0;
     }
 
     .hero-person-img {
-        width: 100%;
-        max-width: 280px;
+        width: 85%;
+        max-width: 260px;
         height: auto;
     }
 
+    /* Stats Section: Side-by-side neat layout on mobile */
     .hero-right {
         width: 100%;
         border-left: none;
         border-top: 1px solid #1a1a1a;
         padding-left: 0;
         padding-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .stat-block {
+        text-align: center;
+        background: rgba(10, 10, 10, 0.6);
+        border: 1px solid #1a1a1a;
+        padding: 10px 4px;
     }
 
     .stat-num {
-        font-size: 36px;
+        font-size: 26px;
     }
 
+    .stat-info h4 {
+        font-size: 8px;
+        letter-spacing: 0.8px;
+    }
+
+    .stat-info p {
+        display: none; /* Hide small paragraphs inside stats on mobile to maintain clean UI */
+    }
+
+    /* Other Sections Alignment */
     .section {
         padding: 40px 16px;
     }
@@ -874,6 +898,7 @@ footer {
         padding: 20px 16px;
     }
 
+    /* Contact Section Alignment */
     .contact-container {
         flex-direction: column;
         padding: 20px;
