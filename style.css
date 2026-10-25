@@ -88,14 +88,14 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Massive Photo with Top Gap Removed & Large Right Stats)
+   3. HERO SECTION (Added precise top gap without changing any sizes)
    ========================================================================== */
 .hero {
     min-height: 92vh;
-    padding: 0 2% 0 2%;
+    padding: 55px 2% 0 2%; /* Header-kkum Peru-kkum naduvula antha gap safe-ah kootappattullathu */
     display: grid;
     grid-template-columns: 1fr 1.6fr 0.85fr; 
-    align-items: stretch; /* Image stretches to fill full height seamlessly */
+    align-items: stretch; 
     position: relative;
     border-bottom: 1px solid #1a1a1a;
     background: transparent;
@@ -228,14 +228,14 @@ nav a:hover, nav a.active {
     grid-column: 2;
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Head mela irukkura gap-ai remove panna bottom-la align seyyappattullathu */
+    align-items: flex-end; 
     z-index: 2;
     height: 100%;
 }
 
 .hero-person-img {
     width: 100%;
-    max-width: 860px; /* Photo-voda size inum romba perusah aakkappattullathu */
+    max-width: 860px; 
     height: 100%;
     max-height: 92vh;
     object-fit: cover;
@@ -245,7 +245,7 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.98);
 }
 
-/* Right Stats section - Perfectly Aligned */
+/* Right Stats section */
 .hero-right {
     grid-column: 3;
     z-index: 3;
