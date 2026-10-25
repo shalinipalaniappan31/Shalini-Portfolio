@@ -88,7 +88,7 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION
+   3. HERO SECTION (Laptop / Desktop View)
    ========================================================================== */
 .hero {
     min-height: 82vh;
@@ -104,7 +104,7 @@ nav a:hover, nav a.active {
 
 .hero-top-wrapper {
     display: grid;
-    grid-template-columns: 1.35fr 1fr;
+    grid-template-columns: 1fr 1.2fr; /* Laptop-ல் படத்திற்கு கூடுதல் இடம் ஒதுக்கப்பட்டு உள்ளது */
     align-items: center;
     width: 100%;
 }
@@ -233,7 +233,7 @@ nav a:hover, nav a.active {
 
 .hero-person-img {
     width: 100%;
-    max-width: 450px;
+    max-width: 580px; /* லேப்டாப்பில் படம் பெரிதாக மற்றும் கச்சிதமாகத் தெரிய சைஸ் அதிகரிக்கப்பட்டுள்ளது */
     height: auto;
     object-fit: cover;
     object-position: top center;
@@ -712,7 +712,7 @@ footer {
 }
 
 /* ==========================================================================
-   9. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE) - FIXED 900px THRESHOLD
+   9. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
    ========================================================================== */
 @media (max-width: 900px) {
     html,
@@ -756,7 +756,7 @@ footer {
 
     .hero-top-wrapper {
         display: flex;
-        flex-direction: column; /* Stack name/text above the profile image */
+        flex-direction: column; /* Mobile-ல் நேராக Stack ஆகும் */
         width: 100%;
         gap: 20px;
     }
@@ -819,7 +819,7 @@ footer {
 
     .hero-person-img {
         width: 100%;
-        max-width: 260px; /* Centered profile image size for mobile */
+        max-width: 260px; /* மொபைலுக்கு பொருத்தமான சைஸ் */
         height: auto;
     }
 
