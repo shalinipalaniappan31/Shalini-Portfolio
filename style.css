@@ -777,81 +777,79 @@ footer {
         letter-spacing: 0.4px;
     }
 
-    /* Hero Section: Exact Reference Match Layout */
+    /* Hero Section: Fixed Mobile Stack Layout */
     .hero {
-        padding: 20px 14px;
+        padding: 25px 16px;
         display: flex;
         flex-direction: column;
     }
 
     .hero-top-wrapper {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: column; /* Stack text above the profile image */
         width: 100%;
-        gap: 8px;
+        gap: 20px;
     }
 
     .hero-left {
-        width: 60%;
-        padding-bottom: 5px;
+        width: 100%;
+        padding-bottom: 0;
     }
 
     .main-title {
-        font-size: 30px;
+        font-size: clamp(45px, 12vw, 65px);
         line-height: 0.85;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .role-line {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
     .role-titles p {
-        font-size: 7.5px;
-        letter-spacing: 0.4px;
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 
     .hero-bio {
-        font-size: 10.5px;
-        line-height: 1.4;
-        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 16px;
         max-width: 100%;
     }
 
     .hero-buttons {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        margin-bottom: 12px;
+        gap: 10px;
+        margin-bottom: 16px;
     }
 
     .view-projects-btn,
     .download-resume-btn {
         width: 100%;
-        padding: 8px 10px;
-        font-size: 8.5px;
+        padding: 12px 16px;
+        font-size: 10px;
         justify-content: center;
-        letter-spacing: 0.8px;
+        letter-spacing: 1.2px;
     }
 
     .bottom-tagline {
-        font-size: 11px;
-        margin-bottom: 8px;
+        font-size: 14px;
+        margin-bottom: 12px;
     }
 
     .hero-center {
-        width: 38%;
+        width: 100%;
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
     }
 
     .hero-person-img {
         width: 100%;
-        max-width: 125px;
+        max-width: 260px; /* Perfectly centered profile image size on mobile */
         height: auto;
     }
 
@@ -859,17 +857,17 @@ footer {
     .hero-right {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 4px;
+        gap: 10px;
         border-top: 1px solid #1a1a1a;
-        padding-top: 12px;
-        margin-top: 10px;
+        padding-top: 16px;
+        margin-top: 15px;
         width: 100%;
     }
 
     .stat-block {
         border-right: 1px solid #1a1a1a;
-        padding-right: 4px;
-        text-align: center;
+        padding-right: 8px;
+        text-align: left;
         background: transparent;
     }
 
@@ -878,16 +876,17 @@ footer {
     }
 
     .stat-num {
-        font-size: 21px;
+        font-size: 32px;
     }
 
     .stat-info h4 {
-        font-size: 6.5px;
-        letter-spacing: 0.4px;
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 
     .stat-info p {
-        display: none;
+        display: block;
+        font-size: 9px;
     }
 
     /* Other Sections */
