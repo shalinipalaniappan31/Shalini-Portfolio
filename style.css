@@ -110,13 +110,12 @@ nav a:hover, nav a.active {
 
 .main-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: clamp(80px, 10vw, 150px);
+    font-size: clamp(60px, 10vw, 150px);
     line-height: 0.80;
     letter-spacing: -1px;
     margin-bottom: 25px;
     margin-top: 0;
     font-weight: 900;
-    white-space: nowrap;
     background: linear-gradient(180deg, #ff0f1b 0%, #d6050e 60%, #990005 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -709,7 +708,7 @@ footer {
 }
 
 /* ==========================================================================
-   9. TABLET RESPONSIVE FIX (MAX-WIDTH: 900PX)
+   9. RESPONSIVE MEDIA QUERIES (TABLET & MOBILE)
    ========================================================================== */
 @media (max-width: 900px) {
     .grid-2-col, .hero {
@@ -753,12 +752,7 @@ footer {
     }
 }
 
-/* ==========================================================================
-   10. MOBILE RESPONSIVE FIX (MAX-WIDTH: 600PX)
-   ========================================================================== */
 @media screen and (max-width: 600px) {
-
-    /* Prevent horizontal scrolling & side movement */
     html,
     body {
         width: 100%;
@@ -766,317 +760,136 @@ footer {
         overflow-x: clip;
     }
 
-    /* Header adjustments */
     header {
         position: sticky;
         top: 0;
         width: 100%;
-        padding: 14px 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-    }
-
-    .header-logo {
-        max-width: 100%;
-        gap: 10px;
-    }
-
-    .logo-text {
-        font-size: 12px;
-        letter-spacing: 1.5px;
+        padding: 12px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav {
-        width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 12px 16px;
+        gap: 12px;
+        overflow-x: auto;
+        max-width: 60%;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none;
     }
 
     nav a {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 1px;
     }
 
-    /* Hero section adjustments */
     .hero {
         width: 100%;
         min-height: auto;
-        padding: 34px 20px 0;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        align-items: start;
-        overflow: hidden;
+        padding: 30px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
     }
 
     .hero-left {
         width: 100%;
-        min-width: 0;
         padding-bottom: 20px;
-        align-self: auto;
     }
 
     .main-title {
-        width: 100%;
-        max-width: 100%;
-        font-size: clamp(46px, 13vw, 72px);
-        line-height: 0.88;
-        letter-spacing: -0.5px;
+        font-size: clamp(45px, 12vw, 65px);
+        line-height: 0.9;
         white-space: normal;
-        overflow-wrap: anywhere;
-        margin-bottom: 26px;
-    }
-
-    .role-line {
-        gap: 10px;
         margin-bottom: 20px;
     }
 
-    .role-titles {
-        min-width: 0;
-    }
-
-    .role-titles p {
-        font-size: 10px;
-        letter-spacing: 1.5px;
-    }
-
     .hero-bio {
-        width: 100%;
+        font-size: 13px;
+        line-height: 1.6;
         max-width: 100%;
-        font-size: 14px;
-        line-height: 1.7;
-        overflow-wrap: anywhere;
     }
 
-    /* Buttons responsive fix */
     .hero-buttons {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 12px;
     }
 
     .view-projects-btn,
     .download-resume-btn {
-        max-width: 100%;
-        padding: 13px 18px;
-        font-size: 11px;
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
     }
 
-    .bottom-tagline {
-        font-size: 17px;
-        letter-spacing: 2px;
-        overflow-wrap: anywhere;
-    }
-
-    /* Profile photo adjustments */
     .hero-center {
         width: 100%;
-        height: auto;
-        min-width: 0;
-        margin: 0;
-        padding: 0;
-        left: 0;
+        display: flex;
         justify-content: center;
-        align-items: flex-end;
+        margin: 20px 0;
+        left: 0;
     }
 
     .hero-person-img {
-        display: block;
         width: 100%;
-        max-width: 360px;
+        max-width: 280px;
         height: auto;
-        max-height: none;
-        object-fit: contain;
-        object-position: center bottom;
-        margin: 0 auto;
     }
 
-    /* Section padding & layouts */
-    .section {
+    .hero-right {
         width: 100%;
-        padding: 42px 18px;
+        border-left: none;
+        border-top: 1px solid #1a1a1a;
+        padding-left: 0;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
     }
 
-    .section-header {
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-bottom: 24px;
+    .stat-num {
+        font-size: 36px;
     }
 
-    .section-header h2,
-    .col-title {
-        font-size: 26px;
-        overflow-wrap: anywhere;
-    }
-
-    .view-all {
-        font-size: 10px;
-        max-width: 100%;
+    .section {
+        padding: 40px 16px;
     }
 
     .projects-grid,
-    .certifications-grid {
-        width: 100%;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-    }
-
-    .project-card,
-    .cert-card {
-        width: 100%;
-        min-width: 0;
-        padding: 17px;
-    }
-
-    .project-img-holder {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    .project-preview-img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .project-title,
-    .cert-card h3 {
-        font-size: 15px;
-        overflow-wrap: anywhere;
-    }
-
-    .project-desc {
-        font-size: 13px;
-    }
-
-    .proj-links {
-        flex-wrap: wrap;
-        gap: 14px;
-    }
-
-    /* Education and Skills stacked layout */
+    .certifications-grid,
     .grid-2-col {
-        width: 100%;
-        grid-template-columns: minmax(0, 1fr);
-        gap: 22px;
+        grid-template-columns: 1fr;
     }
 
     .col-box {
-        width: 100%;
-        min-width: 0;
-        height: auto;
-        padding: 22px 18px;
+        padding: 20px 16px;
     }
 
-    .education-timeline {
-        height: auto;
-    }
-
-    .timeline-content {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .edu-left {
-        width: 100%;
-        min-width: 0;
-    }
-
-    .edu-right {
-        align-items: flex-start;
-        text-align: left;
-        flex-shrink: 1;
-    }
-
-    .sub-text {
-        overflow-wrap: anywhere;
-    }
-
-    .skills-tags {
-        gap: 8px;
-    }
-
-    .skills-tags span {
-        max-width: 100%;
-        padding: 9px 12px;
-        font-size: 12px;
-        overflow-wrap: anywhere;
-    }
-
-    /* Contact Section stacked layout */
     .contact-container {
-        width: 100%;
-        min-width: 0;
         flex-direction: column;
-        align-items: stretch;
-        gap: 25px;
-        padding: 22px 17px;
-    }
-
-    .contact-left,
-    .contact-center,
-    .contact-right {
-        width: 100%;
-        min-width: 0;
-        flex: auto;
+        padding: 20px;
+        gap: 20px;
     }
 
     .contact-center {
         border-left: none;
-        border-top: 1px solid #222222;
-        padding: 22px 0 0;
-        gap: 20px;
-    }
-
-    .contact-item {
-        min-width: 0;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
-    .contact-text-group {
-        min-width: 0;
-        flex: 1;
-    }
-
-    .contact-link-text {
-        font-size: 12px;
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
-
-    .work-together-title {
-        font-size: clamp(38px, 11vw, 48px);
-    }
-
-    .work-together-desc {
-        overflow-wrap: anywhere;
+        border-top: 1px solid #222;
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%;
     }
 
     .contact-right {
         justify-content: flex-start;
-    }
-
-    .build-motto-banner {
-        text-align: left;
-        font-size: 34px;
-    }
-
-    /* Footer responsive fix */
-    footer {
         width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding: 18px;
-        font-size: 10px;
     }
 }
