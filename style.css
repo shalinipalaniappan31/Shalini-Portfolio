@@ -88,7 +88,7 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Exact Reference 3-Column Layout)
+   3. HERO SECTION (Exact Reference 3-Column Layout Fix)
    ========================================================================== */
 .hero {
     min-height: 85vh;
@@ -102,9 +102,10 @@ nav a:hover, nav a.active {
     overflow: hidden;
 }
 
+/* டெஸ்க்டாப்பில் 3 பகுதிகளை ஒரே வரியில் காட்ட Grid */
 .hero-top-wrapper {
     display: grid;
-    grid-template-columns: 1.1fr 1fr 0.8fr; /* 1. Text, 2. Image, 3. Stats */
+    grid-template-columns: 1.2fr 1.1fr 0.8fr; /* 1. Left Text, 2. Center Image, 3. Right Stats */
     align-items: center;
     width: 100%;
     gap: 20px;
@@ -234,7 +235,7 @@ nav a:hover, nav a.active {
 
 .hero-person-img {
     width: 100%;
-    max-width: 440px;
+    max-width: 440px; /* லேப்டாப்பில் படத்தினை பெரியதாகவும் கச்சிதமாகவும் காட்ட */
     height: auto;
     object-fit: cover;
     object-position: top center;
@@ -243,7 +244,7 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.95);
 }
 
-/* Right Stats section - 3rd Column (Vertical Stack) */
+/* Right Stats section - 3வது Column-ஆக நேர்த்தியாக அமைய */
 .hero-right {
     z-index: 3;
     display: flex;
