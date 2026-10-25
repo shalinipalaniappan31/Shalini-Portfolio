@@ -752,6 +752,9 @@ footer {
     }
 }
 
+/* ==========================================================================
+   EXACT MOBILE REFERENCE MATCH (SIDE-BY-SIDE HERO & NEAT STATS)
+   ========================================================================== */
 @media screen and (max-width: 768px) {
     html,
     body {
@@ -785,30 +788,37 @@ footer {
         letter-spacing: 0.8px;
     }
 
-    /* Hero Layout Optimization for Mobile */
+    /* Hero Layout: EXACT match to your reference image layout */
     .hero {
         width: 100%;
         min-height: auto;
         padding: 25px 16px;
         display: flex;
-        flex-direction: column;
-        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .hero-left {
-        width: 100%;
+        width: 58%;
         padding-bottom: 10px;
     }
 
     .main-title {
-        font-size: clamp(40px, 11vw, 60px);
-        line-height: 0.9;
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 0.88;
         margin-bottom: 15px;
     }
 
+    .role-titles p {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
     .hero-bio {
-        font-size: 12px;
-        line-height: 1.5;
+        font-size: 11px;
+        line-height: 1.4;
         max-width: 100%;
         margin-bottom: 15px;
     }
@@ -816,74 +826,75 @@ footer {
     .hero-buttons {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        margin-bottom: 15px;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
     }
 
     .view-projects-btn,
     .download-resume-btn {
-        flex: 1;
-        padding: 10px 8px;
-        font-size: 10px;
+        width: 100%;
+        padding: 9px 12px;
+        font-size: 9.5px;
         justify-content: center;
-        text-align: center;
         letter-spacing: 1px;
     }
 
     .bottom-tagline {
-        font-size: 15px;
-        margin-bottom: 15px;
+        font-size: 13px;
+        margin-bottom: 5px;
     }
 
-    /* Hero Image Proper Alignment */
+    /* Photo side-by-side with title */
     .hero-center {
-        width: 100%;
+        width: 40%;
         display: flex;
         justify-content: center;
-        margin: 10px 0 20px 0;
+        margin: 0;
         left: 0;
+        align-self: flex-start;
     }
 
     .hero-person-img {
-        width: 85%;
-        max-width: 260px;
+        width: 100%;
+        max-width: 145px;
         height: auto;
     }
 
-    /* Stats Section: Side-by-side neat layout on mobile */
+    /* Stats Section at the bottom of hero */
     .hero-right {
         width: 100%;
         border-left: none;
         border-top: 1px solid #1a1a1a;
         padding-left: 0;
-        padding-top: 20px;
+        padding-top: 15px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 6px;
+        margin-top: 15px;
     }
 
     .stat-block {
         text-align: center;
         background: rgba(10, 10, 10, 0.6);
         border: 1px solid #1a1a1a;
-        padding: 10px 4px;
+        padding: 8px 2px;
     }
 
     .stat-num {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .stat-info h4 {
-        font-size: 8px;
-        letter-spacing: 0.8px;
+        font-size: 7.5px;
+        letter-spacing: 0.5px;
     }
 
     .stat-info p {
-        display: none; /* Hide small paragraphs inside stats on mobile to maintain clean UI */
+        display: none; /* Hides description text to fit cleanly in mobile stats boxes */
     }
 
-    /* Other Sections Alignment */
+    /* Other Sections */
     .section {
         padding: 40px 16px;
     }
@@ -898,7 +909,7 @@ footer {
         padding: 20px 16px;
     }
 
-    /* Contact Section Alignment */
+    /* Contact Section */
     .contact-container {
         flex-direction: column;
         padding: 20px;
