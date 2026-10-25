@@ -47,19 +47,19 @@ header {
 }
 
 .logo-box {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     border: 1px solid #ff0f1b;
     color: #ff0f1b;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .logo-text {
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: 700;
 }
@@ -77,7 +77,7 @@ nav {
 nav a {
     color: #888;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1.5px;
     font-weight: 600;
     transition: color 0.3s;
@@ -88,13 +88,13 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================================
-   3. HERO SECTION (Increased Font Sizes for All Elements)
+   3. HERO SECTION (Right Side Stats Fully Increased & Perfectly Fitted)
    ========================================================================== */
 .hero {
     min-height: 90vh;
     padding: 10px 2% 0 2%;
     display: grid;
-    grid-template-columns: 1fr 1.4fr 0.8fr; /* 1. Left Text, 2. Extra Large Image, 3. Stats */
+    grid-template-columns: 1fr 1.3fr 0.95fr; 
     align-items: center;
     position: relative;
     border-bottom: 1px solid #1a1a1a;
@@ -115,7 +115,7 @@ nav a:hover, nav a.active {
 
 .main-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: clamp(55px, 7vw, 125px); /* Title size perusakkappattullathu */
+    font-size: clamp(65px, 8.5vw, 140px);
     line-height: 0.80;
     letter-spacing: -1px;
     margin-bottom: 25px;
@@ -145,30 +145,30 @@ nav a:hover, nav a.active {
 .red-dash {
     color: #ff0f1b;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .role-titles p {
-    font-size: 13px; /* Role titles size perusakkappattullathu */
+    font-size: 15px;
     letter-spacing: 2px;
     font-weight: 700;
-    color: #cccccc;
+    color: #ffffff;
     line-height: 1.4;
 }
 
 .hero-bio {
-    font-size: 13.5px; /* Bio size perusakkappattullathu */
-    color: #888888;
-    max-width: 380px;
+    font-size: 15px;
+    color: #b0b0b0;
+    max-width: 410px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 /* Hero Buttons */
 .hero-buttons {
     display: flex;
     gap: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     flex-wrap: wrap;
 }
 
@@ -179,9 +179,9 @@ nav a:hover, nav a.active {
     background-color: #ff0f1b;
     border: 1px solid #ff0f1b;
     color: #ffffff;
-    padding: 12px 24px;
+    padding: 14px 26px;
     text-decoration: none;
-    font-size: 12px; /* Button text size perusakkappattullathu */
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -199,9 +199,9 @@ nav a:hover, nav a.active {
     background: rgba(10, 10, 10, 0.85);
     border: 1px solid #ff0f1b;
     color: #ff0f1b;
-    padding: 12px 24px;
+    padding: 14px 26px;
     text-decoration: none;
-    font-size: 12px; /* Button text size perusakkappattullathu */
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 1.5px;
     transition: all 0.3s ease;
@@ -216,10 +216,9 @@ nav a:hover, nav a.active {
 
 .bottom-tagline {
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px; /* "Code. Create. Evolve." tagline size perusakkappattullathu */
-    letter-spacing: 2.5px;
+    font-size: 24px;
+    letter-spacing: 3px;
     color: #ff0f1b;
-    opacity: 0.9;
 }
 
 .hero-center {
@@ -242,13 +241,13 @@ nav a:hover, nav a.active {
     filter: contrast(1.15) brightness(0.95);
 }
 
-/* Right Stats section - Font sizes increased */
+/* Right Stats section - Highly Increased Fonts & Perfectly Fitted */
 .hero-right {
     grid-column: 3;
     z-index: 3;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 24px; /* Space between items katchithamaga set seyyappattullathu */
     border-left: 1px solid #1c1c1c;
     padding-left: 28px;
     margin-top: 0;
@@ -257,29 +256,29 @@ nav a:hover, nav a.active {
 .stat-block {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 5px;
 }
 
 .stat-num {
     font-family: 'Bebas Neue', cursive;
-    font-size: 54px; /* Stats numbers size perusakkappattullathu */
+    font-size: 72px; /* Stats numbers (01, 08, 03) inum romba perusah aakkappattullathu */
     color: #ff0f1b;
-    line-height: 0.9;
+    line-height: 0.85;
     letter-spacing: 0.5px;
 }
 
 .stat-info h4 {
-    font-size: 13px; /* Projects, Certificates headings size perusakkappattullathu */
-    letter-spacing: 1.8px;
+    font-size: 15px; /* PROJECTS, CERTIFICATES headers perusah irukkum */
+    letter-spacing: 2px;
     color: #ffffff;
     margin-bottom: 3px;
     font-weight: 700;
 }
 
 .stat-info p {
-    font-size: 12.5px; /* Stats description text size perusakkappattullathu */
-    color: #777777;
-    line-height: 1.3;
+    font-size: 14px; /* Subtext description romba thelivah perusah irukkum */
+    color: #aaaaaa;
+    line-height: 1.4;
 }
 
 /* ==========================================================================
@@ -299,13 +298,13 @@ nav a:hover, nav a.active {
 }
 
 .section-header h2 {
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: 2px;
 }
 
 .view-all {
-    color: #666;
-    font-size: 11px;
+    color: #888;
+    font-size: 13px;
     letter-spacing: 1px;
     text-decoration: none;
 }
@@ -324,7 +323,7 @@ nav a:hover, nav a.active {
 .project-card, .cert-card {
     background: rgba(10, 10, 10, 0.85);
     border: 1px solid #1a1a1a;
-    padding: 22px;
+    padding: 25px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -334,7 +333,7 @@ nav a:hover, nav a.active {
 }
 
 .project-img-holder {
-    height: 180px;
+    height: 190px;
     background: #121212;
     overflow: hidden;
     margin-bottom: 15px;
@@ -349,22 +348,22 @@ nav a:hover, nav a.active {
 }
 
 .project-title {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     letter-spacing: 0.5px;
 }
 
 .project-desc {
-    font-size: 12px;
-    color: #888;
+    font-size: 14px;
+    color: #aaa;
     line-height: 1.5;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .proj-tag {
     color: #ff0f1b;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     margin-bottom: 12px;
     font-weight: 600;
@@ -381,7 +380,7 @@ nav a:hover, nav a.active {
 .proj-links a {
     color: #ff0f1b;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
     transition: opacity 0.2s;
@@ -402,14 +401,14 @@ nav a:hover, nav a.active {
 }
 
 .cert-card h3 {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     letter-spacing: 0.5px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .cert-desc {
-    font-size: 12px;
+    font-size: 13.5px;
     color: #ff0f1b;
     margin-top: 8px;
     font-weight: 600;
@@ -428,7 +427,7 @@ nav a:hover, nav a.active {
 .col-box {
     background: rgba(8, 8, 8, 0.85);
     border: 1px solid #181818;
-    padding: 30px 35px;
+    padding: 35px 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -436,7 +435,7 @@ nav a:hover, nav a.active {
 }
 
 .col-title {
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: 1.5px;
     margin-bottom: 25px;
 }
@@ -463,9 +462,9 @@ nav a:hover, nav a.active {
 
 .timeline-item {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     border-bottom: 1px solid #1a1a1a;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .timeline-item:last-child {
@@ -478,12 +477,12 @@ nav a:hover, nav a.active {
     position: absolute;
     left: -20px;
     top: 4px;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     background-color: #ff0f1b;
     border-radius: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 8px rgba(255, 15, 27, 0.6);
+    box-shadow: 0 0 10px rgba(255, 15, 27, 0.8);
 }
 
 .timeline-content {
@@ -498,15 +497,15 @@ nav a:hover, nav a.active {
 }
 
 .edu-degree {
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: 700;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .sub-text {
-    font-size: 13px;
-    color: #888888;
+    font-size: 14.5px;
+    color: #999999;
     line-height: 1.4;
 }
 
@@ -519,21 +518,21 @@ nav a:hover, nav a.active {
 }
 
 .edu-year {
-    font-size: 13px;
+    font-size: 14.5px;
     font-weight: 700;
     color: #ff0f1b;
     margin-bottom: 4px;
 }
 
 .edu-grade {
-    font-size: 13px;
-    color: #cccccc;
+    font-size: 14px;
+    color: #dddddd;
     font-weight: 500;
 }
 
 /* Skills Categories */
 .skill-category {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .skill-category:last-child {
@@ -541,10 +540,10 @@ nav a:hover, nav a.active {
 }
 
 .skill-cat-title {
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1.5px;
-    color: #888888;
-    margin-bottom: 8px;
+    color: #aaaaaa;
+    margin-bottom: 10px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -556,18 +555,18 @@ nav a:hover, nav a.active {
 }
 
 .skills-tags span {
-    background: rgba(12, 12, 12, 0.9);
-    border: 1px solid #222222;
-    padding: 8px 14px;
-    font-size: 12px;
+    background: rgba(15, 15, 15, 0.9);
+    border: 1px solid #2a2a2a;
+    padding: 10px 16px;
+    font-size: 13.5px;
     font-weight: 600;
-    color: #dedede;
+    color: #f0f0f0;
     letter-spacing: 0.5px;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .skills-tags span:hover {
-    border-color: rgba(255, 15, 27, 0.6);
+    border-color: rgba(255, 15, 27, 0.8);
     transform: translateY(-2px);
 }
 
@@ -585,7 +584,7 @@ nav a:hover, nav a.active {
     gap: 30px;
     background: rgba(8, 8, 8, 0.85);
     border: 1px solid #181818;
-    padding: 40px;
+    padding: 45px;
 }
 
 .contact-left {
@@ -594,7 +593,7 @@ nav a:hover, nav a.active {
 
 .work-together-title {
     font-family: 'Bebas Neue', cursive;
-    font-size: 48px;
+    font-size: 56px;
     line-height: 0.95;
     letter-spacing: 2px;
     color: #ffffff;
@@ -609,7 +608,7 @@ nav a:hover, nav a.active {
 }
 
 .red-line {
-    width: 20px;
+    width: 25px;
     height: 3px;
     background-color: #ff0f1b;
     display: inline-block;
@@ -617,8 +616,8 @@ nav a:hover, nav a.active {
 }
 
 .work-together-desc {
-    font-size: 13px;
-    color: #888888;
+    font-size: 15px;
+    color: #999999;
     line-height: 1.5;
     margin-bottom: 0;
 }
@@ -629,7 +628,7 @@ nav a:hover, nav a.active {
     padding-left: 35px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
 }
 
 .contact-item {
@@ -639,8 +638,8 @@ nav a:hover, nav a.active {
 }
 
 .contact-icon {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
 }
 
@@ -652,13 +651,13 @@ nav a:hover, nav a.active {
 .contact-text-group {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 .contact-link-text {
-    color: #dedede;
+    color: #f0f0f0;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -668,9 +667,9 @@ nav a:hover, nav a.active {
 }
 
 .contact-label {
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 1.8px;
-    color: #666666;
+    color: #777777;
     font-weight: 600;
 }
 
@@ -684,7 +683,7 @@ nav a:hover, nav a.active {
 .build-motto-banner {
     font-family: 'Caveat', cursive, sans-serif;
     color: #ff0f1b;
-    font-size: 36px;
+    font-size: 42px;
     line-height: 0.95;
     text-align: right;
     transform: rotate(-4deg);
@@ -698,11 +697,11 @@ nav a:hover, nav a.active {
    8. FOOTER
    ========================================================================== */
 footer {
-    padding: 20px 5%;
+    padding: 25px 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
-    color: #555;
+    font-size: 12px;
+    color: #777;
     letter-spacing: 1px;
     background: rgba(5, 5, 5, 0.9);
 }
@@ -739,11 +738,10 @@ footer {
     }
 
     nav a {
-        font-size: 8px;
+        font-size: 10px;
         letter-spacing: 0.4px;
     }
 
-    /* Hero Section: Stacked Layout for Mobile */
     .hero {
         padding: 25px 16px;
         display: flex;
@@ -763,7 +761,7 @@ footer {
     }
 
     .main-title {
-        font-size: clamp(45px, 12vw, 65px);
+        font-size: clamp(48px, 12vw, 72px);
         line-height: 0.85;
         margin-bottom: 15px;
     }
@@ -773,12 +771,12 @@ footer {
     }
 
     .role-titles p {
-        font-size: 9px;
+        font-size: 12px;
         letter-spacing: 1px;
     }
 
     .hero-bio {
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.5;
         margin-bottom: 16px;
         max-width: 100%;
@@ -787,21 +785,21 @@ footer {
     .hero-buttons {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
         margin-bottom: 16px;
     }
 
     .view-projects-btn,
     .download-resume-btn {
         width: 100%;
-        padding: 12px 16px;
-        font-size: 10px;
+        padding: 14px 16px;
+        font-size: 12px;
         justify-content: center;
         letter-spacing: 1.2px;
     }
 
     .bottom-tagline {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 12px;
     }
 
@@ -815,11 +813,10 @@ footer {
 
     .hero-person-img {
         width: 100%;
-        max-width: 280px;
+        max-width: 320px;
         height: auto;
     }
 
-    /* Stats blocks below hero on mobile */
     .hero-right {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -844,20 +841,19 @@ footer {
     }
 
     .stat-num {
-        font-size: 32px;
+        font-size: 38px;
     }
 
     .stat-info h4 {
-        font-size: 9px;
+        font-size: 11px;
         letter-spacing: 1px;
     }
 
     .stat-info p {
         display: block;
-        font-size: 9px;
+        font-size: 11px;
     }
 
-    /* Other Sections */
     .section {
         padding: 35px 16px;
     }
@@ -873,6 +869,7 @@ footer {
     }
 
     .contact-container {
+        flex-direction: canvas;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
