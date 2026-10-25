@@ -777,7 +777,7 @@ footer {
         letter-spacing: 0.5px;
     }
 
-    /* Hero Section: Perfect side-by-side title & image for mobile */
+    /* Hero Section: Perfect side-by-side title and image layout match */
     .hero {
         padding: 20px 14px;
     }
@@ -889,4 +889,4 @@ footer {
         justify-content: flex-start;
         width: 100%;
     }
-}s
+}
